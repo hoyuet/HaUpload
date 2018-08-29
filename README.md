@@ -1,10 +1,10 @@
 # HaUpload
 This is a picture upload plugin, including image compression, verification of image format, conversion of Base64 format.
 # How to Use
-#####由于提示信息采用layer,所以首先要引入layer.js和对应的layer.css
-#####html按正常布局就好
-#####js引用
-`HaUpload({`
+##### 由于提示信息采用layer,所以首先要引入layer.js和对应的layer.css
+##### html按正常布局就好
+##### js引用
+` HaUpload({ `
 	`name: 'pic',// 表单名`
 	`selector:'input-file',//点击上传的input类`
 	`url: '', // 表单提交地址 默认(空: 当前页面地址)`

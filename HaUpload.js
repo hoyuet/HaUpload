@@ -111,7 +111,8 @@ function HaUpload(options){
                 n++;
             }
             if(n==len){
-                layer.open({content:"图片格式不能为"+extName,skin: 'msg',time: 3});
+                //layer.open({content:"图片格式不能为"+extName,skin: 'msg',time: 3});
+				alert("图片格式不能为"+extName);
                 return;
             }
         }
@@ -147,8 +148,8 @@ function HaUpload(options){
             }
             opt.success.call('success', that, data);
         }else{
-            console.log(e)
-            layer.open({content:"请求失败",skin: 'msg',time: 3});
+            //layer.open({content:"请求失败",skin: 'msg',time: 3});
+				alert("请求失败");
                 return;
             }
         }

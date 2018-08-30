@@ -6,7 +6,7 @@ This is a picture upload plugin, including image compression, verification of im
 ```
 HaUpload({ 
 	name: 'pic',// 表单名
-	selector:'input-file',//点击上传的input类
+	selector:'.input-file',//点击上传的input选择器
 	url: '', // 表单提交地址 默认(空: 当前页面地址)
 	max_size: 1024 * 1024 * 1, // 文件大小限制
 	data: {},// 附加数据

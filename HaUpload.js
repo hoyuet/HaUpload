@@ -1,7 +1,7 @@
 function HaUpload(options){
     var def_opt = {
         name: 'refund_pic',   // 表单名
-        selector:'input-file',
+        selector:'.input-file',//上传input的选择器
         url: '',  // 表单提交地址 默认(空: 当前页面地址)
         max_size: 1024 * 1024 * 1,  // 文件大小限制
         data: {},   // 附加数据  
@@ -17,7 +17,7 @@ function HaUpload(options){
         }
     }
     // 获取元素
-    var doms = document.getElementsByClassName(def_opt.selector);
+	var doms = document.querySelectorAll(def_opt.selector)
     [].forEach.call(doms, function(dom) {
         var opt = [];
         for(k in def_opt){
